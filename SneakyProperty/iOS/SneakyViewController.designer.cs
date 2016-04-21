@@ -11,25 +11,18 @@ using UIKit;
 
 namespace SneakyProperty.iOS
 {
-	[Register ("ViewController")]
-	partial class ViewController
+	[Register ("SneakyViewController")]
+	partial class SneakyViewController
 	{
 		[Outlet]
-		UIKit.UIButton Button { get; set; }
-
-		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton ForceGC { get; set; }
+		UIButton Back { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (Button != null) {
-				Button.Dispose ();
-				Button = null;
-			}
-			if (ForceGC != null) {
-				ForceGC.Dispose ();
-				ForceGC = null;
+			if (Back != null) {
+				Back.Dispose ();
+				Back = null;
 			}
 		}
 	}

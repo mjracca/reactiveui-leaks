@@ -26,6 +26,7 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -40,6 +41,9 @@
     <MtouchUseSGen>true</MtouchUseSGen>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <IpaPackageName>
+    </IpaPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -117,6 +121,11 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="SneakyViewController.cs" />
+    <Compile Include="SneakyViewController.designer.cs">
+      <DependentUpon>SneakyViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIKitMixins.cs" />
   </ItemGroup>
   <Import Project="..\SneakyProperty\SneakyProperty.projitems" Label="Shared" Condition="Exists('..\SneakyProperty\SneakyProperty.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

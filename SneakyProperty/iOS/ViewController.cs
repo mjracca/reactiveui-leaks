@@ -22,6 +22,10 @@ namespace SneakyProperty.iOS
 				var title = string.Format ("{0} clicks!", count++);
 				Button.SetTitle (title, UIControlState.Normal);
 			};
+
+			ForceGC.TouchUpInside += delegate {
+				System.GC.Collect();
+			};
 		}
 
 		public override void DidReceiveMemoryWarning ()
