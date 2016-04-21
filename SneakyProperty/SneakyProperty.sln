@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakyProperty.iOS", "iOS\SneakyProperty.iOS.csproj", "{69697606-E15B-4FF2-A147-445B498A144B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SneakyProperty", "SneakyProperty\SneakyProperty.shproj", "{714F0EB3-C544-42F7-9680-4AF12423C59B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69697606-E15B-4FF2-A147-445B498A144B}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{69697606-E15B-4FF2-A147-445B498A144B}.Debug|iPhone.Build.0 = Debug|iPhone
+		{69697606-E15B-4FF2-A147-445B498A144B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{69697606-E15B-4FF2-A147-445B498A144B}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{69697606-E15B-4FF2-A147-445B498A144B}.Release|iPhone.ActiveCfg = Release|iPhone
+		{69697606-E15B-4FF2-A147-445B498A144B}.Release|iPhone.Build.0 = Release|iPhone
+		{69697606-E15B-4FF2-A147-445B498A144B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{69697606-E15B-4FF2-A147-445B498A144B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
