@@ -9,7 +9,7 @@ namespace SneakyProperty
 
 		public SneakyViewModel ()
 		{
-			this.RaiseAndSetIfChanged (ref isSneaky, true);
-		}
+            this.RaiseAndSetIfChanged(ref isSneaky, true);
+        }
 	}
 }
