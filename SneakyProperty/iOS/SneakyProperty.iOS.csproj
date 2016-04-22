@@ -57,6 +57,8 @@
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -128,6 +130,7 @@
       <DependentUpon>SneakyViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="UIKitMixins.cs" />
+    <Compile Include="KVONotReallyObservableForProperty.cs" />
   </ItemGroup>
   <Import Project="..\SneakyProperty\SneakyProperty.projitems" Label="Shared" Condition="Exists('..\SneakyProperty\SneakyProperty.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

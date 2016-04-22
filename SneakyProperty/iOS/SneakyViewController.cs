@@ -24,7 +24,7 @@ namespace SneakyProperty.iOS
 
 		protected override void Dispose (bool disposing)
 		{
-			this.viewModel = null;
+//			this.viewModel = null;
 			Back.TouchUpInside -= this.DismissSneakyViewController;
 
 			base.Dispose (disposing);
