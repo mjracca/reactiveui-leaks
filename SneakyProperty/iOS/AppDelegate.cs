@@ -22,7 +22,7 @@ namespace SneakyProperty.iOS
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 
-			Locator.CurrentMutable.RegisterLazySingleton (() => new KVONotReallyObservableForProperty(), typeof(ICreatesObservableForProperty));
+			Locator.CurrentMutable.Register (() => new KVONotReallyObservableForProperty(), typeof(ICreatesObservableForProperty));
 			return true;
 		}
 
